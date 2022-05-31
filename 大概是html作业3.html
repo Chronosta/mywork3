@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<div>
+    <p id="time"></p>
+</div>
+<button onclick=start();>开始</button>
+<button onclick=pause();>暂停</button>
+<script>
+var time=0;
+car s1=0;
+car s2=0;
+function start(){
+    if(s1==0){
+    time++;
+    document.getElementById("time").innerHTML=time/100+"秒"
+    setTimeout("start();",1);
+    }
+}
+function zero(){
+    time=0;
+}
+function pause(){
+    s1=1;
+}
+    var arr=new Array();
+    var date=new Date();
+    console.log(data)
+    var data1=new Date(2022,5,30)
+    console.log(data2)
+    console.log(data.getFullYear)
+    console.log(data.getMonth)
+    console.log(data.getDay)
+    var year=data.getFullYear();
+    var month=data.getMonth()+1;
+    var dates=data.getDate();
+    var day=data.getDay();
+    var arr=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"]
+    console.log(date)
+    var time=document.getElementById("time")
+    time.innerText=date
+</script>
+</body>
+</html>
